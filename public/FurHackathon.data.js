@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'D:/Users/Radu/Documents/Unreal Projects/Hackathon/Binaries/HTML5/Hackathon.data';
-    var REMOTE_PACKAGE_BASE = 'Hackathon.data';
+    var PACKAGE_NAME = 'D:/Users/Radu/Documents/Unreal Projects/FurHackathon/Binaries/HTML5/FurHackathon.data';
+    var REMOTE_PACKAGE_BASE = 'FurHackathon.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -98,9 +98,9 @@ Module.expectedDataFileDownloads++;
     function assert(check, msg) {
       if (!check) throw msg + new Error().stack;
     }
-Module['FS_createPath']('/', 'Hackathon', true, true);
-Module['FS_createPath']('/Hackathon', 'Content', true, true);
-Module['FS_createPath']('/Hackathon/Content', 'Paks', true, true);
+Module['FS_createPath']('/', 'FurHackathon', true, true);
+Module['FS_createPath']('/FurHackathon', 'Content', true, true);
+Module['FS_createPath']('/FurHackathon/Content', 'Paks', true, true);
 
     function DataRequest(start, end, audio) {
       this.start = start;
@@ -149,10 +149,10 @@ Module['FS_createPath']('/Hackathon/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_D:/Users/Radu/Documents/Unreal Projects/Hackathon/Binaries/HTML5/Hackathon.data');
+              Module['removeRunDependency']('datafile_D:/Users/Radu/Documents/Unreal Projects/FurHackathon/Binaries/HTML5/FurHackathon.data');
 
     };
-    Module['addRunDependency']('datafile_D:/Users/Radu/Documents/Unreal Projects/Hackathon/Binaries/HTML5/Hackathon.data');
+    Module['addRunDependency']('datafile_D:/Users/Radu/Documents/Unreal Projects/FurHackathon/Binaries/HTML5/FurHackathon.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -173,6 +173,6 @@ Module['FS_createPath']('/Hackathon/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 91, "filename": "/UE4CommandLine.txt"}, {"start": 91, "audio": 0, "end": 175147536, "filename": "/Hackathon/Content/Paks/Hackathon-HTML5.pak"}], "remote_package_size": 175147536, "package_uuid": "819b32d8-658e-4ff7-b5db-eeafc2cb8929"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 53, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"start": 53, "audio": 0, "end": 97, "filename": "/UE4CommandLine.txt"}, {"start": 97, "audio": 0, "end": 187162389, "filename": "/FurHackathon/Content/Paks/FurHackathon-HTML5.pak"}], "remote_package_size": 187162389, "package_uuid": "57542204-8348-40e9-8587-4944caa2e6aa"});
 
 })();
