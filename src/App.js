@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router';
 import AuthPage from './pages/AuthPage/AuthPage';
-import MainPage from './pages/MainPage/MainPage';
+// import MainPage from './pages/MainPage/MainPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import { BrowserRouter, Link } from 'react-router-dom';
 import { PrivateRoute } from './hoc/PrivateRoute';
