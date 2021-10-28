@@ -1,0 +1,36 @@
+.button {
+  padding: 7px 19px;
+  border-radius: 5px;
+  border: solid 1px $grey;
+  background-color: $white;
+  font-family: $rubik;
+  font-size: 14px;
+  color: $blue;
+  cursor: pointer;
+  text-decoration: none;
+  min-width: fit-content;
+  &--google {
+    display: flex;
+    align-items: center;
+  }
+  &--blue {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &--green {
+    background-color: $green;
+    color: $white;
+  }
+  &--grey {
+    background-color: $grey;
+    color: $white;
+  }
+
+  &--disabled {
+    background-color: $grey;
+    color: $white;
+    cursor: default;
+    pointer-events: none;
+  }
+}
